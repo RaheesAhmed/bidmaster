@@ -16,14 +16,10 @@ import {
   Sparkles,
   Target,
 } from "lucide-react";
-import Image from "next/image";
-import { Header } from "@/components/header";
-import { Footer } from "@/components/footer";
 
 export default function Home() {
   return (
     <>
-      <Header />
       <div className="min-h-screen">
         {/* Hero Section */}
         <section className="relative bg-secondary">
@@ -120,7 +116,6 @@ export default function Home() {
           </div>
         </section>
       </div>
-      <Footer />
     </>
   );
 }
