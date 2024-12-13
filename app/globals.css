@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: neue-haas-grotesk-display, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 215 48% 25%; /* Navy #1f4160 */
+    --card: 0 0% 100%;
+    --card-foreground: 215 48% 25%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 48% 25%;
+
+    /* Upwork Green */
+    --primary: 114 100% 33%; /* #14A800 */
+    --primary-foreground: 0 0% 100%;
+
+    /* Light gray background */
+    --secondary: 120 29% 97%; /* #f2f7f2 */
+    --secondary-foreground: 215 48% 25%;
+
+    /* Medium gray */
+    --muted: 120 8% 63%; /* #9aaa97 */
+    --muted-foreground: 215 48% 25%;
+
+    /* Light green */
+    --accent: 84 100% 44%; /* #95df00 */
+    --accent-foreground: 215 48% 25%;
+
+    /* Error red */
+    --destructive: 0 71% 51%; /* #dc2626 */
+    --destructive-foreground: 0 0% 100%;
+
+    /* Border & Input colors */
+    --border: 0 0% 88%; /* #e0e0e0 */
+    --input: 0 0% 88%;
+    --ring: 114 100% 33%; /* Upwork Green */
+
+    /* Chart colors */
+    --chart-1: 114 100% 33%; /* Upwork Green */
+    --chart-2: 84 100% 44%; /* Light Green */
+    --chart-3: 215 48% 25%; /* Navy */
+    --chart-4: 120 8% 63%; /* Medium Gray */
+    --chart-5: 120 29% 97%; /* Light Gray */
+
+    --radius: 1rem;
+  }
+
+  .dark {
+    --background: 215 48% 15%; /* Darker Navy */
+    --foreground: 0 0% 100%;
+
+    --card: 215 48% 18%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 215 48% 18%;
+    --popover-foreground: 0 0% 100%;
+
+    /* Slightly lighter Upwork Green */
+    --primary: 114 100% 38%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Darker secondary */
+    --secondary: 215 48% 22%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Darker muted */
+    --muted: 215 48% 25%;
+    --muted-foreground: 0 0% 80%;
+
+    /* Darker accent */
+    --accent: 84 100% 38%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Darker destructive */
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Darker borders */
+    --border: 215 48% 25%;
+    --input: 215 48% 25%;
+    --ring: 114 100% 38%;
+
+    /* Dark theme chart colors */
+    --chart-1: 114 100% 38%; /* Lighter Upwork Green */
+    --chart-2: 84 100% 38%; /* Lighter Light Green */
+    --chart-3: 0 0% 100%; /* White */
+    --chart-4: 215 48% 40%; /* Lighter Navy */
+    --chart-5: 120 8% 73%; /* Lighter Gray */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
